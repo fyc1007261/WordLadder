@@ -26,10 +26,3 @@ patchPluginXml {
       <em>most HTML tags may be used</em>"""
 }
 
-task hello {
-    doLast {
-        int a = Func.one();
-        println 'Hello world!'
-        println a;
-    }
-}
