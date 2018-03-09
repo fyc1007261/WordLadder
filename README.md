@@ -18,9 +18,20 @@ gradle build
 
 ###### 2. Run the project
 
+There are two ways to run the project. 
+
+You can directly run the program by java,
+
 ```bash
 cd build\classes\java\main
 java Main <FILE> <WORD1> <WORD2>
 # e.g. java Main dict.txt code data
+```
+
+You can also run the program using gradle,
+
+```
+gradle run -PappArgs="[<FILE>, <WORD1>, <WORD2>]"
+# e.g. gradle run -PappArgs="['dict.txt', 'code', 'data']"
 ```
 
